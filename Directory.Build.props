@@ -1,0 +1,11 @@
+<Project>
+    <PropertyGroup>
+        <NoWarn>$(NoWarn);NU1507;NU1903</NoWarn>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="AsyncFixer">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+</Project>

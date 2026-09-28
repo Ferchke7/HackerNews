@@ -1,0 +1,11 @@
+root = true
+
+[*.cs]
+# Enforce Clean Architecture Diagnostic Rule HN0001 as Error
+dotnet_diagnostic.HN0001.severity = error
+
+# Domain rules: Domain must not depend on Application, Infrastructure, or Api
+dotnet_code_quality.HN0001.Domain = Application, Infrastructure, Api
+
+# Application rules: Application must not depend on Infrastructure or Api
+dotnet_code_quality.HN0001.Application = Infrastructure, Api

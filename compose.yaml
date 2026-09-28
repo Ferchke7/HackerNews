@@ -1,0 +1,10 @@
+services:
+  hackernews:
+    image: hackernews
+    build:
+      context: .
+      dockerfile: HackerNews/Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production

@@ -1,0 +1,29 @@
+@HackerNews_HostAddress = http://localhost:5110
+
+### 1. Get Top 5 Best Stories (Successful Request)
+GET {{HackerNews_HostAddress}}/api/stories/best?n=5
+Accept: application/json
+
+### 2. Get Top 20 Best Stories
+GET {{HackerNews_HostAddress}}/api/stories/best?n=20
+Accept: application/json
+
+### 3. Missing Parameter 'n' (Validation Error S102)
+GET {{HackerNews_HostAddress}}/api/stories/best
+Accept: application/json
+
+### 4. Non-Positive Parameter 'n' (Validation Error S101)
+GET {{HackerNews_HostAddress}}/api/stories/best?n=-1
+Accept: application/json
+
+### 5. Non-Integer Parameter 'n' (Validation Error S101)
+GET {{HackerNews_HostAddress}}/api/stories/best?n=abc
+Accept: application/json
+
+### 6. Health Check
+GET {{HackerNews_HostAddress}}/health
+Accept: text/plain
+
+### 7. OpenAPI Specification
+GET {{HackerNews_HostAddress}}/openapi/v1.json
+Accept: application/json

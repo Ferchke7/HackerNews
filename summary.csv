@@ -1,0 +1,3 @@
+Label,# Samples,Average,Min,Max,Std. Dev.,Error %,Throughput,Received KB/sec,Sent KB/sec,Avg. Bytes
+HackerNews,1026892,2,0,483,5.56,0.000%,34165.95688,77566.25,4571.03,2324.8
+TOTAL,1026892,2,0,483,5.56,0.000%,34165.95688,77566.25,4571.03,2324.8
