@@ -1,7 +1,5 @@
 # Hacker News Best Stories API
 
-A high-throughput, zero-allocation ASP.NET Core API (.NET 10) returning the top `n` stories from Hacker News, sorted by score.
-
 ## API
 
 `GET /api/stories/best?n={positive integer}`
