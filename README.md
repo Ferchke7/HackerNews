@@ -63,9 +63,16 @@ dotnet test HackerNews.sln
 
 ---
 
-## Load-Test Snapshot
+Load-Test Snapshot
+Raw JMeter reports and diagnostic trace: 
+aggregate.csv
+, 
+summary.csv
+, and 
+hn.nettrace
+.
 
-Observed run with Apache JMeter (hot response cache):
+Observed run (hot response cache):
 
 | Metric | Observed |
 | --- | ---: |
